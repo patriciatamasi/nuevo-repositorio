@@ -1,0 +1,195 @@
+*{ /*Reseteo universal*/
+    margin:0;
+    padding:0
+}
+
+body { /*Fuente del sitio*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{ /*Menú Flexbox*/
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+nav ul li { /*Box-modelling botones*/
+    padding: 10px;
+    border-top: 2px solid white; 
+    border-right: 3px solid white; 
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 4px;
+}
+
+nav ul li a{ /*Color de los links*/
+    color: white;
+}
+
+.home_text { /*Fuente texto de INDEX*/
+    padding-left: 3%;
+    padding-top: 3%;
+    color: #55286f;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.background__image{ /*Imagen de fondo de INDEX*/
+    position: absolute;
+    background-size: initial;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.page-selected{ /*Color del botón seleccionado en el menú*/
+    background-color: rgb(185, 86, 185);
+}
+
+.contenedor-menu{ /*Box-modelling de contenedor del menú*/
+    background-color: black;
+    width: 100%;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.menu{ /*Box-modelling de los botones del menú*/
+    list-style: none;
+    padding: 10px;
+}
+
+section ul li { /*Submenú páginas - Será futuro grid y flexbox*/
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    }
+
+#sections a:after{ /*CÓMO HAGO APARECER ESTOS SEPARADORES ENTRE LINKS DEL SECTION? NO SE VEN*/
+    contain: "|";
+}
+
+section ul li a { /*Formato de links del submenú*/
+    text-decoration: none;
+    color: #55286f;
+    font-weight: bold;
+}
+
+.img-adjust-index{ /*Ajuste auto  de la imagen de INDEX (p/responsive)*/
+    width: 100%;
+    height: auto;
+    object-fit:scale-down;
+}
+
+.img-adjust{ /*Ajuste de imgs de ABOUT*/
+    width: 100%;
+/*     height: 100%; */
+}
+
+.about_text{ /*Ajuste de texto de ABOUT*/
+    text-align: justify;
+    color: #55286f;
+    font-size: 20px;
+/*     vertical-align: middle; */
+}
+
+
+/*GRIDS DE INDEX y ABOUT*/
+
+.grid-padre-index{
+    display:grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: auto 90%;
+    grid-template-areas: "grid-menu grid-menu"
+                         "grid-img-index grid-text-index";       
+    position: relative;
+    z-index: 2;
+}
+
+.grid-menu{
+    grid-area: grid-menu;
+}
+
+.grid-img-index{
+    grid-area: grid-img-index;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    padding-top: 3%;
+    padding-right: 5%;
+}
+
+.grid-text-index{
+    grid-area: grid-text-index;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 3%;
+    padding-right: 5%;
+}
+
+
+.grid-padre-about{
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "grid-menu  grid-menu  grid-menu"
+                         "grid-fotosizq-about  grid-text-about  grid-fotosder-about";
+}
+
+.grid-fotosizq-about{
+    grid-area: grid-fotosizq-about;
+}
+
+.grid-text-about{
+    grid-area: grid-text-about;
+    padding: 3%;
+}
+.grid-fotosder-about{
+    grid-area: grid-fotosder-about;
+}
+
+
+ 
+@media screen and (max-width: 390px){ /*Responsive*/
+
+        .grid-padre-index{
+            display:grid;
+            grid-template-columns: 35% 65%;
+            grid-template-rows: auto 30% 60%;
+            grid-template-areas: "grid-menu grid-menu"
+                                "grid-img-index grid-img-index"
+                                "grid-text-index grid-text-index";                        
+        }
+        
+        .grid-padre-about{
+        display: grid;
+        grid-template-columns: 60% 20% 20%;
+        grid-template-rows: auto 40% 50%;
+        grid-template-areas: "grid-menu  grid-menu  grid-menu"
+                            "grid-text-about  grid-fotosizq-about  grid-fotosizq-about"
+                            "grid-text-about grid-fotosder-about grid-fotosder-about";
+        }
+
+        .grid-menu{
+            position: relative;
+        }
+
+        .home_text {
+            font-size: inherit;
+        }
+
+        .about_text{
+            font-size: inherit;
+        }
+
+        .grid-fotosizq-about{
+            position: relative;
+        }
+
+        .grid-fotosder-about{
+            position: relative;
+        }
+
+}
