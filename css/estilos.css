@@ -49,7 +49,7 @@ nav ul li a{ /*Color de los links*/
 }
 
 .contenedor-menu{ /*Box-modelling de contenedor del menú*/
-    background-color: black;
+    background-image: linear-gradient(to bottom, black, grey); /*Gradient*/
     width: 100%;
     align-items: center;
     border: 2px solid red;
@@ -149,6 +149,43 @@ section ul li a { /*Formato de links del submenú*/
 .grid-fotosder-about{
     grid-area: grid-fotosder-about;
 }
+
+
+/*ANIMACIONES, ETC*/
+
+.animacion-text-about{
+    animation: animacion-appear 4s ease 1;
+}
+
+.animation-fotos-about{
+animation: animacion-fotos-appear 8s ease 1;
+}
+
+@keyframes animacion-appear{
+    from{opacity: 0;}
+    to{opacity:1}
+}
+@keyframes animacion-fotos-appear{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.8;}
+    100%{opacity: 1;
+         transform: rotateX(360deg);}
+}
+
+.transform-img-index:hover{ /*Transform Rotate + Transition*/
+    transform: rotateY(360deg);
+    transition: all 3s;
+}
+
+/* .transform-fotosizq-about{
+    transform: skewX(5deg);
+}
+
+.transform-fotosder-about{
+    transform: skewX(-5deg);
+}
+ */
 
 
  
