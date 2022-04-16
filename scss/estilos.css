@@ -1,0 +1,322 @@
+@charset "UTF-8";
+* {
+  /*Reseteo universal*/
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*Fuente del sitio*/
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+  /*Menú Flexbox*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav ul li {
+  /*Box-modelling botones*/
+  padding: 10px;
+  border-top: 2px solid white;
+  border-right: 3px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 4px;
+}
+
+nav ul li a {
+  /*Color de los links*/
+  color: white;
+}
+
+.home_text {
+  /*Fuente texto de INDEX*/
+  padding-left: 3%;
+  padding-top: 3%;
+  color: #55286f;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.background__image {
+  /*Imagen de fondo de INDEX*/
+  position: absolute;
+  background-size: initial;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.page-selected {
+  /*Color del botón seleccionado en el menú*/
+  background-color: #b956b9;
+}
+
+.contenedor-menu {
+  /*Box-modelling de contenedor del menú*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(grey));
+  background-image: linear-gradient(to bottom, black, grey);
+  /*Gradient*/
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid red;
+}
+
+.menu {
+  /*Box-modelling de los botones del menú*/
+  list-style: none;
+  padding: 10px;
+}
+
+section ul li {
+  /*Submenú páginas - Será futuro grid y flexbox*/
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+section ul li a {
+  /*Formato de links del submenú*/
+  text-decoration: none;
+  color: #55286f;
+  font-weight: bold;
+}
+
+#sections a:after {
+  /*CÓMO HAGO APARECER ESTOS SEPARADORES ENTRE LINKS DEL SECTION? NO SE VEN*/
+  contain: "|";
+}
+
+.img-adjust-index {
+  /*Ajuste auto  de la imagen de INDEX (p/responsive)*/
+  width: 100%;
+  height: auto;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.img-adjust {
+  /*Ajuste de imgs de ABOUT*/
+  width: 100%;
+  /*     height: 100%; */
+}
+
+.about_text {
+  /*Ajuste de texto de ABOUT*/
+  text-align: justify;
+  color: #55286f;
+  font-size: 20px;
+  /*     vertical-align: middle; */
+}
+
+/*GRIDS DE INDEX y ABOUT*/
+.grid-padre-index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
+  -ms-grid-rows: auto 90%;
+      grid-template-rows: auto 90%;
+      grid-template-areas: "grid-menu grid-menu"
+ "grid-img-index grid-text-index";
+  position: relative;
+  z-index: 2;
+}
+
+.grid-menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: grid-menu;
+}
+
+.grid-img-index {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: grid-img-index;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  padding-top: 3%;
+  padding-right: 5%;
+}
+
+.grid-text-index {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: grid-text-index;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3%;
+  padding-right: 5%;
+}
+
+.grid-padre-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 35% 30%;
+      grid-template-columns: 35% 35% 30%;
+  -ms-grid-rows: 10% 90%;
+      grid-template-rows: 10% 90%;
+      grid-template-areas: "grid-menu  grid-menu  grid-menu"
+ "grid-fotosizq-about  grid-text-about  grid-fotosder-about";
+}
+
+.grid-fotosizq-about {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: grid-fotosizq-about;
+}
+
+.grid-text-about {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: grid-text-about;
+  padding: 3%;
+}
+
+.grid-fotosder-about {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: grid-fotosder-about;
+}
+
+/*ANIMACIONES, ETC*/
+.animacion-text-about {
+  -webkit-animation: animacion-appear 4s ease 1;
+          animation: animacion-appear 4s ease 1;
+}
+
+.animation-fotos-about {
+  -webkit-animation: animacion-fotos-appear 8s ease 1;
+          animation: animacion-fotos-appear 8s ease 1;
+}
+
+@-webkit-keyframes animacion-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animacion-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animacion-fotos-appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+@keyframes animacion-fotos-appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+.transform-img-index:hover {
+  /*Transform Rotate + Transition*/
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+/* .transform-fotosizq-about{
+    transform: skewX(5deg);
+}
+
+.transform-fotosder-about{
+    transform: skewX(-5deg);
+}
+ */
+@media screen and (max-width: 390px) {
+  /*Responsive*/
+  .grid-padre-index {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 35% 65%;
+        grid-template-columns: 35% 65%;
+    -ms-grid-rows: auto 30% 60%;
+        grid-template-rows: auto 30% 60%;
+        grid-template-areas: "grid-menu grid-menu"
+ "grid-img-index grid-img-index"
+ "grid-text-index grid-text-index";
+  }
+  .grid-padre-about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 20% 20%;
+        grid-template-columns: 60% 20% 20%;
+    -ms-grid-rows: auto 40% 50%;
+        grid-template-rows: auto 40% 50%;
+        grid-template-areas: "grid-menu  grid-menu  grid-menu"
+ "grid-text-about  grid-fotosizq-about  grid-fotosizq-about"
+ "grid-text-about grid-fotosder-about grid-fotosder-about";
+  }
+  .grid-menu {
+    position: relative;
+  }
+  .home_text {
+    font-size: inherit;
+  }
+  .about_text {
+    font-size: inherit;
+  }
+  .grid-fotosizq-about {
+    position: relative;
+  }
+  .grid-fotosder-about {
+    position: relative;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
