@@ -1,3 +1,5 @@
+@import "colores";
+
 *{ /*Reseteo universal*/
     margin:0;
     padding:0
@@ -7,19 +9,22 @@ body { /*Fuente del sitio*/
     font-family: 'Ubuntu', sans-serif;
 }
 
-nav ul{ /*Menú Flexbox*/
+nav ul{ /*Menú Flexbox*/                      /*Nesting -SASS*/
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
         li { /*Box-modelling botones*/
         padding: 10px;
-        border-top: 2px solid white; 
-        border-right: 3px solid white; 
-        border-left: 1px solid white;
-        border-bottom: 1px solid white;
+        border-top: 2px solid $colorfont_nav; 
+        border-right: 3px solid $colorfont_nav; 
+        border-left: 1px solid $colorfont_nav;
+        border-bottom: 1px solid $colorfont_nav;
         margin: 4px;
+            &:hover{                           /*& -SASS-*/
+                background-color: $color_hover_nav;
+            }
             a{ /*Color de los links*/
-                color: white;
+                color: $color_border_nav;
             }
         }
 }
