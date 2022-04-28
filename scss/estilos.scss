@@ -30,23 +30,67 @@ nav ul{ /*Menú Flexbox*/                      /*Nesting -SASS*/
 }
 
 
-.home_text { /*Fuente texto de INDEX*/
+/* VIEJA FUENTE DE TEXTO DEL INDEX, ANTES DEL MIXIN y EXTEND.
+.home_text {
     padding-left: 3%;
     padding-top: 3%;
     color: #55286f;
     text-align: justify;
     font-weight: bold;
     font-size: 24px;
+} */
+
+
+
+.font-size-for-extend{ /*Clase para usar en el EXTEND*/
+    font-size: 24px;
 }
 
+@mixin home_text ($padleft,$padtop,$color,$textalign,$fontweight)
+{
+    padding-left: $padleft; /*3%*/
+    padding-top: $padtop;/*3%*/
+    color: $color;/*#55286f*/
+    text-align: $textalign;/*justify*/
+    font-weight: $fontweight;/*bold*/
+}
+
+.home_text { /*Fuente de texto del index --- Aplico INCLUDE de MIXIN y EXTEND*/
+    @include home_text(3%,3%,#55286f,justify,bold);
+    @extend .font-size-for-extend;
+}
+
+
+$background__image: ( /*Imagen de fondo del index --- Aplico MAP*/
+    "position": absolute,
+    "background-size": initial,
+    "width": 100%,
+    "height": 100%,
+    "opacity": 0.3,
+    "z-index": 1,
+);
+
 .background__image{ /*Imagen de fondo de INDEX*/
+    position: map-get($background__image,"position");
+    background-size: map-get($background__image,"background-size");
+    width: map-get($background__image,"width");
+    height: map-get($background__image,"height");
+    opacity: map-get($background__image,"opacity");
+    z-index: map-get($background__image,"z-index");
+}
+
+
+
+/*VIEJO: Imagen de fondo de INDEX ANTES DE APLICAR MAPS:
+.background__image{
     position: absolute;
     background-size: initial;
     width: 100%;
     height: 100%;
     opacity: 0.3;
     z-index: 1;
-}
+}*/
+
 
 .page-selected{ /*Color del botón seleccionado en el menú*/
     background-color: rgb(185, 86, 185);

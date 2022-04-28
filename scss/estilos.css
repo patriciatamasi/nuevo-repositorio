@@ -43,14 +43,32 @@ nav ul li a {
   color: white;
 }
 
+/* VIEJA FUENTE DE TEXTO DEL INDEX, ANTES DEL MIXIN y EXTEND.
 .home_text {
-  /*Fuente texto de INDEX*/
-  padding-left: 3%;
-  padding-top: 3%;
-  color: #55286f;
-  text-align: justify;
-  font-weight: bold;
+    padding-left: 3%;
+    padding-top: 3%;
+    color: #55286f;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 24px;
+} */
+.font-size-for-extend, .home_text {
+  /*Clase para usar en el EXTEND*/
   font-size: 24px;
+}
+
+.home_text {
+  /*Fuente de texto del index --- Aplico INCLUDE de MIXIN y EXTEND*/
+  padding-left: 3%;
+  /*3%*/
+  padding-top: 3%;
+  /*3%*/
+  color: #55286f;
+  /*#55286f*/
+  text-align: justify;
+  /*justify*/
+  font-weight: bold;
+  /*bold*/
 }
 
 .background__image {
@@ -63,6 +81,15 @@ nav ul li a {
   z-index: 1;
 }
 
+/*VIEJO: Imagen de fondo de INDEX ANTES DE APLICAR MAPS:
+.background__image{
+    position: absolute;
+    background-size: initial;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 1;
+}*/
 .page-selected {
   /*Color del botón seleccionado en el menú*/
   background-color: #b956b9;
