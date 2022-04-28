@@ -43,6 +43,10 @@ nav ul li a {
   color: white;
 }
 
+nav ul li a:hover {
+  color: white;
+}
+
 /* VIEJA FUENTE DE TEXTO DEL INDEX, ANTES DEL MIXIN y EXTEND.
 .home_text {
     padding-left: 3%;
@@ -52,6 +56,11 @@ nav ul li a {
     font-weight: bold;
     font-size: 24px;
 } */
+.h1format {
+  color: white;
+  border: none;
+}
+
 .font-size-for-extend, .home_text {
   /*Clase para usar en el EXTEND*/
   font-size: 24px;

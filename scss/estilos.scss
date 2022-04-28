@@ -25,6 +25,9 @@ nav ul{ /*Menú Flexbox*/                      /*Nesting -SASS*/
             }
             a{ /*Color de los links*/
                 color: $color_border_nav;
+                &:hover{
+                    color: white;
+                }
             }
         }
 }
@@ -40,7 +43,10 @@ nav ul{ /*Menú Flexbox*/                      /*Nesting -SASS*/
     font-size: 24px;
 } */
 
-
+.h1format{
+    color: white;
+    border: none;
+}
 
 .font-size-for-extend{ /*Clase para usar en el EXTEND*/
     font-size: 24px;
