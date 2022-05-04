@@ -8,16 +8,30 @@
     <meta name=keywords content="pelis y series para días lluviosos,pelis y series para días soleados,pelis y series para días fríos">
     <title>Reviews-WEATHER</title>
     <!--   Google fonts: -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
-          rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fredoka:wght@300&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
-          rel="stylesheet">
-    <!--   Google font para usar: font-family: 'Caveat', cursive;-->
-    <!--   Google font para usar: font-family: 'Fredoka', sans-serif;-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fredoka:wght@300&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@700&family=Fredoka:wght@300&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@700&family=Fredoka:wght@300&family=Indie+Flower&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
+    rel="stylesheet">
+<!--   Google font para usar: font-family: 'Caveat', cursive;-->
+<!--   Google font para usar: font-family: 'Fredoka', sans-serif;-->
+<!--   Google font para usar: font-family: 'Bangers', cursive;-->
+<!--   Google font para usar: font-family: 'Indie Flower', cursive;-->
     <link rel="stylesheet" href="../scss/estilos.css">
     <link href="../css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> <!-- Link de Bootstrap -->
 </head>
@@ -37,21 +51,22 @@
     
     <section >
         <ul id="sections">
-            <li><a href="#sunny"><img src="../images/em_sunny.jpg" alt="emoji_sunny" width="47px"></a></li>
-            <li><a href=""><img src="../images/em_storm2.png" alt="emoji_storm" width="45px"></a></li>
-            <li><a href=""><img src="../images/em_cloudy.png" alt="emoji_cloudy" width="45px"></a></li>
-            <li><a href=""><img src="../images/em_fullmoon.png" alt="emoji_fullmoon" width="45px"></a></li>
-            <li><a href=""><img src="../images/em_snow.png" alt="emoji_upsidedown" width="45px"></a></li>
+            <li><a class="subtitulos" href="#sol"><img src="../images/em_sunny.jpg" alt="emoji_sunny" width="47px">SOL</a></li>
+            <li><a class="subtitulos" href="#lluvia"><img src="../images/em_storm2.png" alt="emoji_storm" width="45px">LLUVIA</a></li>
+            <li><a class="subtitulos" href="#nublado"><img src="../images/em_cloudy.png" alt="emoji_cloudy" width="45px">NUBLADO</a></li>
+            <li><a class="subtitulos" href="#frio"><img src="../images/em_snow.png" alt="emoji_snow" width="45px">FRÍO</a></li>
+            <li><a class="subtitulos" href="#fullmoon"><img src="../images/em_fullmoon.png" alt="emoji_fullmoon" width="45px">FULLMOON</a></li>
         </ul>
     </section>
 
 
     <main>
-        <div id="sunny" class="container-fluid bg-dark text-white p-3 mb-4">
-            <img src="../images/em_sunny.jpg" alt="emoji_sunny" width="47px">
+        <div id="sol" class="container-fluid bg-dark text-white p-3 mb-1">
+            <h2 class="subtitulos">... S O L</h3>
         </div>
 
-        <section class="bg-black text-white mb-3"> <!-- Review 1 -->
+        <section class="bg-black text-white  mb-4">
+            <!-- Review SOL -->
             <div class="row align-items-center p-3">
                 <div class="col-md-5 p-3 pb-0">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/nI8jlPfbFSA"
@@ -61,21 +76,34 @@
                 </div>
                 <div class="col-md-5 justify-content-start align-items-center">
 
-                    <p><b>Cast: </b>Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina Solange, Marika
+                    <p><b class="underline">Cast</b>: Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina
+                        Solange, Marika
                         Lagercrantz, Leif Andrée, Anna Granath, Per Andersson, Lottie Ejebrant, Sofia Ledarp</p>
-                    <p><b>Director: </b>Felix Herngren.</p>
-                    <p><b>Origen: </b>Suecia.</p>
-                    <p><b>Categoría: </b>Miniserie.</p>
+                    <p><b class="underline">Director</b>: Felix Herngren.</p>
+                    <p><b class="underline">Origen</b>: Suecia.</p>
+                    <p><b class="underline">Categoría</b>: Miniserie.</p>
                 </div>
             </div>
             <div class="row p-4">
                 <div class="col justify-content-start  align-items-center">
-                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una
+                        jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie
+                        drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de
+                        humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál
+                        dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                        <a class="subir" href=" #">Subir</a>
                 </div>
             </div>
-        </section> <!-- FIN Review 1 -->
+     
+        </section> <!-- FIN Review SOL -->
 
-        <section class="bg-black text-white mb-3"> <!-- Review 2 -->
+
+        <div id="lluvia" class="container-fluid bg-dark text-white p-3 mb-1">
+            <h3 class="subtitulos">... L L U V I A</h3>
+        </div>
+
+        <section class="bg-black text-white mb-4">
+            <!-- Review LLUVIA -->
             <div class="row align-items-center p-3">
                 <div class="col-md-5 p-3 pb-0">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/nI8jlPfbFSA"
@@ -85,21 +113,33 @@
                 </div>
                 <div class="col-md-5 justify-content-start align-items-center">
 
-                    <p><b>Cast: </b>Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina Solange, Marika
+                    <p><b class="underline">Cast</b>: Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina
+                        Solange, Marika
                         Lagercrantz, Leif Andrée, Anna Granath, Per Andersson, Lottie Ejebrant, Sofia Ledarp</p>
-                    <p><b>Director: </b>Felix Herngren.</p>
-                    <p><b>Origen: </b>Suecia.</p>
-                    <p><b>Categoría: </b>Miniserie.</p>
+                    <p><b class="underline">Director</b>: Felix Herngren.</p>
+                    <p><b class="underline">Origen</b>: Suecia.</p>
+                    <p><b class="underline">Categoría</b>: Miniserie.</p>
                 </div>
             </div>
             <div class="row p-4">
                 <div class="col justify-content-start  align-items-center">
-                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una
+                        jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie
+                        drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de
+                        humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál
+                        dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                        <a class="subir" href=" #">Subir</a>
                 </div>
             </div>
-        </section> <!-- FIN Review 2 -->
-        
-        <section class="bg-black text-white mb-3"> <!-- Review 3 -->
+        </section> <!-- FIN Review LLUVIA -->
+
+
+        <div id="nublado" class="container-fluid bg-dark text-white p-3 mb-1">
+            <h3 class="subtitulos">... N U B L A D O</h3>
+        </div>
+
+        <section class="bg-black text-white mb-4">
+            <!-- Review NUBLADO -->
             <div class="row align-items-center p-3">
                 <div class="col-md-5 p-3 pb-0">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/nI8jlPfbFSA"
@@ -109,23 +149,103 @@
                 </div>
                 <div class="col-md-5 justify-content-start align-items-center">
 
-                    <p><b>Cast: </b>Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina Solange, Marika
+                    <p><b class="underline">Cast</b>: Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina
+                        Solange, Marika
                         Lagercrantz, Leif Andrée, Anna Granath, Per Andersson, Lottie Ejebrant, Sofia Ledarp</p>
-                    <p><b>Director: </b>Felix Herngren.</p>
-                    <p><b>Origen: </b>Suecia.</p>
-                    <p><b>Categoría: </b>Miniserie.</p>
+                    <p><b class="underline">Director</b>: Felix Herngren.</p>
+                    <p><b class="underline">Origen: </b>: Suecia.</p>
+                    <p><b class="underline">Categoría</b>: Miniserie.</p>
                 </div>
             </div>
             <div class="row p-4">
                 <div class="col justify-content-start  align-items-center">
-                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una
+                        jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie
+                        drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de
+                        humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál
+                        dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                        <a class="subir" href=" #">Subir</a>
                 </div>
             </div>
-        </section> <!-- FIN Review 3 -->
+        </section> <!-- FIN Review NUBLADO -->
 
+
+        <div id="frio" class="container-fluid bg-dark text-white p-3 mb-1">
+            <h3 class="subtitulos">... F R Í O</h3>
+        </div>
+
+        <section class="bg-black text-white mb-4">
+            <!-- Review FRÍO -->
+            <div class="row align-items-center p-3">
+                <div class="col-md-5 p-3 pb-0">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/nI8jlPfbFSA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-md-5 justify-content-start align-items-center">
+
+                    <p><b class="underline">Cast</b>: Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina
+                        Solange, Marika
+                        Lagercrantz, Leif Andrée, Anna Granath, Per Andersson, Lottie Ejebrant, Sofia Ledarp</p>
+                    <p><b class="underline">Director</b>: Felix Herngren.</p>
+                    <p><b class="underline">Origen</b>: Suecia.</p>
+                    <p><b class="underline">Categoría</b>: Miniserie.</p>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col justify-content-start  align-items-center">
+                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una
+                        jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie
+                        drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de
+                        humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál
+                        dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                        <a class="subir" href=" #">Subir</a>
+                </div>
+            </div>
+        </section> <!-- FIN Review FRÍO -->
+
+
+        <div id="fullmoon" class="container-fluid bg-dark text-white p-3 mb-1">
+            <h3 class="subtitulos">... F U L L M O O N</h3>
+        </div>
+
+        <section class="bg-black text-white mb-4">
+            <!-- Review LUNA LLENA -->
+            <div class="row align-items-center p-3">
+                <div class="col-md-5 p-3 pb-0">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/nI8jlPfbFSA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-md-5 justify-content-start align-items-center">
+
+                    <p><b class="underline">Cast</b>: Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina
+                        Solange, Marika
+                        Lagercrantz, Leif Andrée, Anna Granath, Per Andersson, Lottie Ejebrant, Sofia Ledarp</p>
+                    <p><b class="underline">Director</b>: Felix Herngren.</p>
+                    <p><b class="underline">Origen</b>: Suecia.</p>
+                    <p><b class="underline">Categoría</b>: Miniserie.</p>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col justify-content-start  align-items-center">
+                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una
+                        jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie
+                        drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de
+                        humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál
+                        dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                </div>
+            </div>
+        </section> <!-- FIN Review LUNA LLENA -->
 
     </main>
 
+    
+    <footer class="m-4">
+        <a href="#"><img src="../images/back_to_the_menu.png" alt="back_to_the_menu"></a>
+    </footer>
 
 </body>
 

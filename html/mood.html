@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=description content="Recomendaciones de pelis y series sin filtro para el mood de hoy">
-    <meta name=keywords content="pelis y series mindblowing,pelis y series para días tristes,pelis y series para días felices,pelis y series para sorprender,pelis y series para pensar">
+    <meta name=keywords
+        content="pelis y series mindblowing,pelis y series para días tristes,pelis y series para días felices,pelis y series para sorprender,pelis y series para pensar">
     <title>Reviews-MOOD</title>
     <!--   Google fonts: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fredoka:wght@300&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fredoka:wght@300&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@700&family=Fredoka:wght@300&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@700&family=Fredoka:wght@300&family=Indie+Flower&family=Ubuntu:ital,wght@0,300;1,500&display=swap"
+        rel="stylesheet">
     <!--   Google font para usar: font-family: 'Caveat', cursive;-->
     <!--   Google font para usar: font-family: 'Fredoka', sans-serif;-->
+    <!--   Google font para usar: font-family: 'Bangers', cursive;-->
+    <!--   Google font para usar: font-family: 'Indie Flower', cursive;-->
+
     <link rel="stylesheet" href="../scss/estilos.css">
     <link href="../css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> <!-- Link de Bootstrap -->
 </head>
+
 <body>
     <header>
-              <nav class="contenedor-menu">
-                <ul class="menu">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="genero.html">GÉNERO</a></li>
-                    <li><a href="rating.html">RATING</a></li>
-                    <li class="page-selected"><a href="#">MOOD</a></li>
-                    <li><a href="weather.html">WEATHER</a></li>
-                </ul>
-            </nav>
+        <nav class="contenedor-menu">
+            <ul class="menu">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="genero.html">GÉNERO</a></li>
+                <li><a href="rating.html">RATING</a></li>
+                <li class="page-selected"><a href="#">MOOD</a></li>
+                <li><a href="weather.html">WEATHER</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section >
+    <section>
         <ul id="sections">
-            <li><a href="#emojiinlove"><img src="../images/em_inlove.jpg" alt="emoji_inlove" width="47px"></a></li>
-            <li><a href=""><img src="../images/em_cry.jpg" alt="emoji_cry" width="45px"></a></li>
-            <li><a href=""><img src="../images/em_mistery.jpg" alt="emoji_mistery" width="45px"></a></li>
-            <li><a href=""><img src="../images/em_mindblown2.jpg" alt="emoji_mindblown" width="45px"></a></li>
-            <li><a href=""><img src="../images/em_upsidedown4.jpg" alt="emoji_upsidedown" width="45px"></a></li>
+            <li><a class="subtitulos" href="#emojiinlove"><img src="../images/em_inlove.jpg" alt="emoji_inlove"
+                        width="47px">IN LOOVE</a></li>
+            <li><a class="subtitulos" href="#emoji_cry"><img src="../images/em_cry.jpg" alt="emoji_cry"
+                        width="45px">SAD</a></li>
+            <li><a class="subtitulos" href="#emoji_mistery"><img src="../images/em_mistery.jpg" alt="emoji_mistery"
+                        width="45px">STALKER</a></li>
+            <li><a class="subtitulos" href="#emoji_mindblown"><img src="../images/em_mindblown2.jpg"
+                        alt="emoji_mindblown" width="45px">MINDBLOWN!</a></li>
+            <li><a class="subtitulos" href="#emoji_upsidedown"><img src="../images/em_upsidedown4.jpg"
+                        alt="emoji_upsidedown" width="45px">SURPRISE-ABLE</a></li>
         </ul>
 
     </section>
 
 
     <main>
-        <div id="emojiinlove" class="container-fluid bg-dark text-white p-3 mb-4">
-            <img src="../images/em_inlove.jpg" alt="emoji_inlove" width="47px">
+        <div id="emojiinlove" class="container-fluid bg-dark text-white p-3 mb-1">
+            <h3 class="subtitulos">... IN LOOVE</h3>
         </div>
 
-        <section class="bg-black text-white  mb-3"> <!-- Review 1 -->
+        <section class="bg-black text-white mb-4">
+            <!-- Review EMOJI_INLOVE -->
             <div class="row align-items-center p-3">
                 <div class="col-md-5 p-3 pb-0">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/nI8jlPfbFSA"
@@ -62,21 +86,34 @@
                 </div>
                 <div class="col-md-5 justify-content-start align-items-center">
 
-                    <p><b>Cast: </b>Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina Solange, Marika
+                    <p><b class="underline">Cast</b>: Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina
+                        Solange, Marika
                         Lagercrantz, Leif Andrée, Anna Granath, Per Andersson, Lottie Ejebrant, Sofia Ledarp</p>
-                    <p><b>Director: </b>Felix Herngren.</p>
-                    <p><b>Origen: </b>Suecia.</p>
-                    <p><b>Categoría: </b>Miniserie.</p>
+                    <p><b class="underline">Director</b>: Felix Herngren.</p>
+                    <p><b class="underline">Origen</b>: Suecia.</p>
+                    <p><b class="underline">Categoría</b>: Miniserie.</p>
                 </div>
             </div>
             <div class="row p-4">
                 <div class="col justify-content-start  align-items-center">
-                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una
+                        jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie
+                        drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de
+                        humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál
+                        dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                    <a class="subir" href=" #">Subir</a>
                 </div>
             </div>
-        </section> <!-- FIN Review 1 -->
 
-        <section class="bg-black text-white mb-3"> <!-- Review 2 -->
+        </section> <!-- FIN Review EMOJI_INLOVE -->
+
+
+        <div id="emoji_cry" class="container-fluid bg-dark text-white p-3 mb-1">
+            <h3 class="subtitulos">... SAD</h3>
+        </div>
+
+        <section class="bg-black text-white mb-4">
+            <!-- Review EMOJI_CRY -->
             <div class="row align-items-center p-3">
                 <div class="col-md-5 p-3 pb-0">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/nI8jlPfbFSA"
@@ -86,22 +123,33 @@
                 </div>
                 <div class="col-md-5 justify-content-start align-items-center">
 
-                    <p><b>Cast: </b>Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina Solange, Marika
+                    <p><b class="underline">Cast</b>: Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina
+                        Solange, Marika
                         Lagercrantz, Leif Andrée, Anna Granath, Per Andersson, Lottie Ejebrant, Sofia Ledarp</p>
-                    <p><b>Director: </b>Felix Herngren.</p>
-                    <p><b>Origen: </b>Suecia.</p>
-                    <p><b>Categoría: </b>Miniserie.</p>
+                    <p><b class="underline">Director</b>: Felix Herngren.</p>
+                    <p><b class="underline">Origen</b>: Suecia.</p>
+                    <p><b class="underline">Categoría</b>: Miniserie.</p>
                 </div>
             </div>
             <div class="row p-4">
                 <div class="col justify-content-start  align-items-center">
-                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una
+                        jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie
+                        drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de
+                        humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál
+                        dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                    <a class="subir" href=" #">Subir</a>
                 </div>
             </div>
-        </section> <!-- FIN Review 2 -->
+        </section> <!-- FIN Review EMOJI_CRY  -->
 
-        
-        <section class="bg-black text-white mb-3"> <!-- Review 3 -->
+
+        <div id="emoji_mistery" class="container-fluid bg-dark text-white p-3 mb-1">
+            <h3 class="subtitulos">... STALKER</h3>
+        </div>
+
+        <section class="bg-black text-white mb-4">
+            <!-- Review EMOJI_MISTERY -->
             <div class="row align-items-center p-3">
                 <div class="col-md-5 p-3 pb-0">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/nI8jlPfbFSA"
@@ -111,22 +159,103 @@
                 </div>
                 <div class="col-md-5 justify-content-start align-items-center">
 
-                    <p><b>Cast: </b>Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina Solange, Marika
+                    <p><b class="underline">Cast</b>: Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina
+                        Solange, Marika
                         Lagercrantz, Leif Andrée, Anna Granath, Per Andersson, Lottie Ejebrant, Sofia Ledarp</p>
-                    <p><b>Director: </b>Felix Herngren.</p>
-                    <p><b>Origen: </b>Suecia.</p>
-                    <p><b>Categoría: </b>Miniserie.</p>
+                    <p><b class="underline">Director</b>: Felix Herngren.</p>
+                    <p><b class="underline">Origen: </b>: Suecia.</p>
+                    <p><b class="underline">Categoría</b>: Miniserie.</p>
                 </div>
             </div>
             <div class="row p-4">
                 <div class="col justify-content-start  align-items-center">
-                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una
+                        jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie
+                        drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de
+                        humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál
+                        dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                    <a class="subir" href=" #">Subir</a>
                 </div>
             </div>
-        </section> <!-- FIN Review 3 -->
+        </section> <!-- FIN Review EMOJI_MISTERY -->
 
+
+        <div id="emoji_mindblown" class="container-fluid bg-dark text-white p-3 mb-1">
+            <h3 class="subtitulos">... MINDBLOWN!</h3>
+        </div>
+
+        <section class="bg-black text-white mb-4">
+            <!-- Review EMOJI_MINDBLOWN -->
+            <div class="row align-items-center p-3">
+                <div class="col-md-5 p-3 pb-0">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/nI8jlPfbFSA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-md-5 justify-content-start align-items-center">
+
+                    <p><b class="underline">Cast</b>: Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina
+                        Solange, Marika
+                        Lagercrantz, Leif Andrée, Anna Granath, Per Andersson, Lottie Ejebrant, Sofia Ledarp</p>
+                    <p><b class="underline">Director</b>: Felix Herngren.</p>
+                    <p><b class="underline">Origen</b>: Suecia.</p>
+                    <p><b class="underline">Categoría</b>: Miniserie.</p>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col justify-content-start  align-items-center">
+                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una
+                        jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie
+                        drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de
+                        humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál
+                        dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                    <a class="subir" href=" #">Subir</a>
+                </div>
+            </div>
+        </section> <!-- FIN Review EMOJI_MINDBLOWN -->
+
+
+        <div id="emoji_upsidedown" class="container-fluid bg-dark text-white p-3 mb-1">
+            <h3 class="subtitulos">... SURPRISE-ABLE</a></h3>
+        </div>
+
+        <section class="bg-black text-white mb-4">
+            <!-- Review EMOJI_UPSIDEDOWN -->
+            <div class="row align-items-center p-3">
+                <div class="col-md-5 p-3 pb-0">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/nI8jlPfbFSA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-md-5 justify-content-start align-items-center">
+
+                    <p><b class="underline">Cast</b>: Carla Sehn, Sascha Zacharias, Alfred Svensson, Dan Ekborg, Petrina
+                        Solange, Marika
+                        Lagercrantz, Leif Andrée, Anna Granath, Per Andersson, Lottie Ejebrant, Sofia Ledarp</p>
+                    <p><b class="underline">Director</b>: Felix Herngren.</p>
+                    <p><b class="underline">Origen</b>: Suecia.</p>
+                    <p><b class="underline">Categoría</b>: Miniserie.</p>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col justify-content-start  align-items-center">
+                    <p class="lead">La desaparición repentina de un inepto ladrón de bancos que toma rehenes durante una
+                        jornada de puertas abiertas plantea todo un enigma para los investigadores del caso. Miniserie
+                        drama-cómica medio light pero entretenida, que se puede maratonear en 3 horas. Tiene algo de
+                        humanidad, suspenso/thriller. Te desconcierta un poco qué parte va a resultar cómica y cuál
+                        dramática, asi que es un estilo diferente que vale la pena ver. </p>
+                </div>
+            </div>
+        </section> <!-- FIN Review EMOJI_UPSIDEDOWN -->
 
     </main>
+    
+    <footer class="m-4">
+        <a href="#"><img src="../images/back_to_the_menu.png" alt="back_to_the_menu"></a>
+    </footer>
+
 
 </body>
 
