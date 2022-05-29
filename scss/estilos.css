@@ -65,6 +65,14 @@ nav ul li a:hover {
   border: none;
 }
 
+.font_fichas, .font_movietitles {
+  font-family: 'Courier Prime', monospace;
+}
+
+.font_movietitles {
+  font-size: 27px;
+}
+
 .starsformat {
   color: goldenrod;
   font-size: 32px;

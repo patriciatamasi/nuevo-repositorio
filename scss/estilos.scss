@@ -51,6 +51,16 @@ nav ul{ /*Menú Flexbox*/                      /*Nesting -SASS*/
     border: none;
 }
 
+.font_fichas{
+    font-family: 'Courier Prime', monospace;
+}
+
+.font_movietitles{
+    @extend .font_fichas;
+    font-size: 27px;
+}
+
+
 .starsformat{
 color: goldenrod;
 font-size: 32px;
